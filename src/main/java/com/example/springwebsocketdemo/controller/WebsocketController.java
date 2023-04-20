@@ -17,8 +17,8 @@ import java.util.List;
 public class WebsocketController {
     private final SimpMessagingTemplate simpMessagingTemplate;
 
-    @MessageMapping("/add-product")
+    @MessageMapping("/names")
     public void addProduct(@Payload List<String> names) {
-        simpMessagingTemplate.convertAndSend("/topic/sort-names", names.stream().sorted().toList());
+        simpMessagingTemplate.convertAndSend("/topic/sorted-names", names.stream().sorted().toList());
     }
 }

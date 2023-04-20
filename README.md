@@ -20,3 +20,6 @@
 ##### notes:
 - the config values(heartbeat, threadnameprefix, topics and destination prefixes are arbitrary, you can change if needed).
 - it's strictly for learning purposes, for production I'd add tests, setup config vars in application.properties or/and env vars and maven profiles.
+
+##### todo:
+- add native-image executable and docker image support and docs. when I get the time...

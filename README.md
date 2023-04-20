@@ -6,7 +6,8 @@
 
 ##### reqs:
 - jdk17 installed.
-- to test the application, I used the apic client, but you can use any. 
+- to test the application, I used the [apic client](https://www.apic.app/), but you can use any.
+
 ##### to run: 
 - clone the repo
 - run `./mvnw spring-boot:run`
@@ -15,3 +16,7 @@
 connection-url: ws://localhost:8080/ws
 subscription endpoint: /topic/sort-names
 destinations: /app/names
+
+##### notes:
+- the config values(heartbeat, threadnameprefix, topics and destination prefixes are arbitrary, you can change if needed).
+- it's strictly for learning purposes, for production I'd add tests, setup config vars in application.properties or/and env vars and maven profiles.

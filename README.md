@@ -13,9 +13,9 @@
 - run `./mvnw spring-boot:run`
 
 ##### to test: 
-connection-url: ws://localhost:8080/ws
-subscription endpoint: /topic/sort-names
-destinations: /app/names
+- connection-url: ws://localhost:8080/ws
+- subscription endpoint: /topic/sort-names
+- destinations: /app/names
 
 ##### notes:
 - the config values(heartbeat, threadnameprefix, topics and destination prefixes are arbitrary, you can change if needed).

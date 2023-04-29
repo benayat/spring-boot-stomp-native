@@ -56,7 +56,7 @@
 				<artifactId>native-maven-plugin</artifactId>
 				<configuration>
 					<buildArgs>
-						--no-fallback -H:+StaticExecutableWithDynamicLibC
+						--no-fallback --static --libc=musl
 					</buildArgs>
 				</configuration>
 			</plugin>

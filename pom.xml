@@ -65,7 +65,7 @@
 				<artifactId>native-maven-plugin</artifactId>
 				<configuration>
 					<buildArgs>
-						--no-fallback -H:+StaticExecutableWithDynamicLibC --gc=g1gc
+						--no-fallback -H:+StaticExecutableWithDynamicLibC --gc=G1
 					</buildArgs>
 				</configuration>
 			</plugin>

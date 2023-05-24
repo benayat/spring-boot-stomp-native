@@ -7,5 +7,6 @@ FROM eclipse-temurin:17-jdk-alpine
 VOLUME /tmp
 WORKDIR /app
 COPY --from=git /git .
+EXPOSE 8080
 RUN chmod +x ./mvnw && ./mvnw clean package
 ENTRYPOINT java -jar ./target/*.jar

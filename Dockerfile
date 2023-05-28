@@ -8,5 +8,6 @@ VOLUME /tmp
 WORKDIR /app
 COPY --from=git /git .
 EXPOSE 8080
+RUN ls -a
 RUN chmod +x ./mvnw && ./mvnw clean package
 ENTRYPOINT java -jar ./target/*.jar
